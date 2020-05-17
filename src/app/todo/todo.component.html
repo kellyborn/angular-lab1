@@ -4,9 +4,13 @@
         <p>A place to store your todos</p>
 
         <input class="input" type="text" id="filter" name="filter" placeholder="Filter your to-dos" />
+        <!-- put the *ngIf on a container element that wraps the *ngFor element. -->
+        <!-- <ng-container ngIf="!todo.completed" class="complete-button"> -->
         <ol>
             <li *ngFor="let todo of todos" [ngClass]="{ done: todo.completed}">{{todo.task}}</li>
         </ol>
+        <!-- </ng-container> -->
+
         <input class="input" type="text" id="filter" name="filter" placeholder="Add your to-dos" />
         <button class="button" type="add">Add</button>
 

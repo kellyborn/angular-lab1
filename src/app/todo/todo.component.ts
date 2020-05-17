@@ -14,7 +14,7 @@ export class TodoComponent implements OnInit {
     { task: "Complete resume assignment", completed: false },
     { task: "Pickup Mom's gift", completed: true },
     { task: "Find appetizer recipe", completed: false },
-    { task: "Call Grandma", completed: false }
+    { task: "Call Grandma", completed: true }
   ];
 
   constructor() { }
